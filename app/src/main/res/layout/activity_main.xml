@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ed9595"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="28dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="28dp">
+
+        <ImageView
+            android:id="@+id/picker_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_left" />
+
+        <com.meteor.view.picker.EasyStringPickerView
+            android:id="@+id/string_picker_view"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:background="#00000000"
+            app:m_alignment="center"
+            app:m_disallow_intercept_touch="true"
+            app:m_end_color="#66FFFFFF"
+            app:m_is_circulation="false"
+            app:m_max_line_width="128dp"
+            app:m_max_text_size="28sp"
+            app:m_min_text_size="16sp"
+            app:m_orientation="horizontal"
+            app:m_start_color="#ffffff"
+            app:m_visible_item_count="5" />
+
+        <ImageView
+            android:id="@+id/picker_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_right" />
+    </RelativeLayout>
+
+    <com.meteor.view.seekbar.EasySeekBarView
+        android:id="@+id/seek_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="2900"
+        android:maxHeight="0.5dp"
+        android:minHeight="0.5dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/seek_bar_bg"
+        android:splitTrack="false"
+        android:thumb="@mipmap/ellipse" />
+
+    <TextView
+        android:id="@+id/seek_bar_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数值"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+</LinearLayout>

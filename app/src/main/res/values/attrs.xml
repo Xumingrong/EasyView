@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EasyPickerView">
+        <!--中间位置item背景色-->
+        <attr name="m_center_item_background" format="reference|color" />
+        <!--可见item个数-->
+        <attr name="m_visible_item_count" format="integer" />
+        <!--中间item位置-->
+        <attr name="m_center_item_position" format="integer" />
+        <!--是否循环-->
+        <attr name="m_is_circulation" format="boolean" />
+        <!--不允许父组件拦截触摸事件，设置为true为不允许拦截，此时该设置才生效-->
+        <attr name="m_disallow_intercept_touch" format="boolean" />
+        <!--滚动方向-->
+        <attr name="m_orientation" format="string">
+            <enum name="horizontal" value="1" />
+            <enum name="vertical" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="EasyStringPickerView">
+        <!--文字渐变大小-->
+        <attr name="m_min_text_size" format="dimension" />
+        <attr name="m_max_text_size" format="dimension" />
+        <!--文字渐变颜色-->
+        <attr name="m_start_color" format="color" />
+        <attr name="m_end_color" format="color" />
+        <!--文字最大行宽-->
+        <attr name="m_max_line_width" format="dimension" />
+        <!--文字对齐方式-->
+        <attr name="m_alignment" format="enum">
+            <enum name="center" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>
